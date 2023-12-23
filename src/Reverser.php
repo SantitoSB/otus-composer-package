@@ -8,6 +8,10 @@ class Reverser
 {
     public function execute(string $baseString): string
     {
-        return strrev($baseString);
+        $resultString = "";
+        for($i = mb_strlen($baseString, "UTF-8"); $i >= 0; $i--) {
+            $resultString .= mb_substr($baseString, $i, 1, "UTF-8");
+        }
+        return $resultString;
     }
 }
