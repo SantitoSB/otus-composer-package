@@ -1,0 +1,17 @@
+{
+    "name": "sergey-antonov/otus-composer-package",
+    "type": "library",
+    "autoload": {
+        "psr-4": {
+            "SergeyAntonov\\OtusComposerPackage\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Sergey Antonov"
+        }
+    ],
+    "require": {
+        "php": ">=7.4"
+    }
+}
